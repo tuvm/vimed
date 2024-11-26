@@ -1,5 +1,5 @@
 import { contextBridge } from 'electron';
-import { TypedIpcRenderer } from 'common/ipc';
+import { TypedIpcRenderer } from '../common/ipc';
 
 declare global {
   interface Window {

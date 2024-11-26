@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import { UserConfig, defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import react from '@vitejs/plugin-react';
-import pkg from '../../package.json';
+import pkg from '../package.json';
 
 const PROJECT_ROOT = resolve(__dirname, '../../');
 

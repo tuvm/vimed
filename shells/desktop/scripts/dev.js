@@ -44,7 +44,7 @@ function restartElectron() {
 rimraf('.vite/');
 
 // Start renderer dev server
-const server = spawn('pnpm exec vite dev -c packages/renderer/vite.config.ts', {
+const server = spawn('pnpm exec vite dev -c renderer/vite.config.ts', {
   shell: true,
 });
 server.stdout.setEncoding('utf8');
@@ -63,7 +63,7 @@ let killable = false;
 // Preload
 console.log('Building preload...');
 await build({
-  configFile: 'packages/preload/vite.config.ts',
+  configFile: 'preload/vite.config.ts',
   mode: 'development',
   clearScreen: false,
   plugins: [
@@ -84,7 +84,7 @@ await build({
 // Main
 console.log('Building main...');
 await build({
-  configFile: 'packages/main/vite.config.ts',
+  configFile: 'main/vite.config.ts',
   mode: 'development',
   clearScreen: false,
   plugins: [

@@ -13,10 +13,8 @@
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "types": ["vite/client"],
-    "paths": {
-      "common/*": ["./packages/common/*"]
-    }
+    "paths": {}
   },
-  "include": ["packages"],
-  "exclude": ["packages/renderer"]
+  "include": ["packages", "shells"],
+  "exclude": ["shells/desktop/renderer"]
 }

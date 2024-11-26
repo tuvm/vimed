@@ -6,12 +6,16 @@
   "type": "module",
   "author": {
     "name": "Vu Minh Tu",
-    "email": "tuvm95@gmail.com"
+    "email": "tu.vm41@gmail.com"
   },
   "scripts": {
+    "browser:dev": "pnpm --filter browser run serve",
+    "desktop:dev": "pnpm --filter desktop run dev",
     "dev": "node ./scripts/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "pnpm exec eslint --ignore-path .gitignore . --max-warnings 0"
+    "lint": "pnpm exec eslint --ignore-path .gitignore . --max-warnings 0",
+    "bd": "pnpm run browser:dev",
+    "dd": "pnpm run desktop:dev"
   },
   "keywords": [
     "DICOM",
@@ -27,10 +31,6 @@
     "@typescript-eslint/eslint-plugin": "^8.15.0",
     "@typescript-eslint/parser": "^8.15.0",
     "@vitejs/plugin-react": "^4.3.3",
-    "dmg-builder": "^25.1.8",
-    "electron": "^33.2.0",
-    "electron-builder": "^25.1.8",
-    "electron-builder-squirrel-windows": "^25.1.8",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -38,14 +38,10 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "prettier": "^3.3.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "rimraf": "^6.0.1",
     "typescript": "^5.7.2",
     "vite": "^5.4.11",
     "vite-plugin-static-copy": "^2.1.0",
-    "vite-tsconfig-paths": "^5.1.3",
-    "wait-on": "^8.0.1"
+    "vite-tsconfig-paths": "^5.1.3"
   },
   "dependencies": {
     "@treverix/custom-electron-titlebar": "^4.2.0",

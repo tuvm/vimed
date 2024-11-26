@@ -1,0 +1,20 @@
+{
+  "name": "browser",
+  "version": "1.0.0",
+  "description": "ViMed in browser",
+  "type": "module",
+  "main": ".vite/index.cjs",
+  "scripts": {
+    "start": "pnpm run serve",
+    "serve": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.11",
+    "vite-tsconfig-paths": "^5.1.3"
+  }
+}

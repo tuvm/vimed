@@ -9,7 +9,7 @@ export default defineConfig({
     outDir: '.vite/',
     emptyOutDir: false,
     lib: {
-      entry: 'packages/main/index.ts',
+      entry: 'main/index.ts',
       formats: ['cjs'],
     },
     rollupOptions: {
