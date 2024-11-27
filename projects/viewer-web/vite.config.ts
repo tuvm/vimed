@@ -22,7 +22,7 @@ export default defineConfig(async (mode) => {
     },
     base: './',
     build: {
-      outDir: resolve(PROJECT_ROOT, '.vite/shells/browser/'),
+      outDir: resolve(PROJECT_ROOT, '.vite/projects/viewer-web/'),
       emptyOutDir: true,
       rollupOptions: {
         input: {

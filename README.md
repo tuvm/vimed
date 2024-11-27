@@ -8,20 +8,20 @@
 
 Multi platform project contains source for web app and desktop app build with electron
 We need at least 2 shell to build seperate 2 environments
-So we create shells folder contain 2 project: browser and desktop
+So we create shell folder contain 2 project: viewer-web and viewer-desktop
 Folder packages will contain core and shared packages
 
 Add 2 script to run web and desktop
 Web:
 
 ```bash
-pnpm bd
-pnpm browser:dev
+pnpm vwd
+pnpm viewer-web:dev
 ```
 
 Desktop:
 
 ```bash
-pnpm dd
-pnpm desktop:dev
+pnpm vdd
+pnpm viewer-desktop:dev
 ```

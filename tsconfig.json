@@ -12,9 +12,9 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
-    "types": ["vite/client"],
+    "types": [],
     "paths": {}
   },
-  "include": ["packages", "shells"],
-  "exclude": ["shells/desktop/renderer"]
+  "include": ["packages", "projects"],
+  "exclude": []
 }

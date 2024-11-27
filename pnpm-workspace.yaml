@@ -1,0 +1,5 @@
+packages:
+  - 'packages/*'    # Includes all core package
+  - 'libs/*'        # Folder for libraries
+  - 'extensions/*'  # Folder for extensions
+  - 'projects/*'    # Folder contain projects
