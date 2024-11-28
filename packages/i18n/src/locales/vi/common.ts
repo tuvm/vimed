@@ -1,0 +1,427 @@
+import CAD from './CAD';
+import date from './date';
+import gender from './gender';
+import label from './label';
+import message from './message';
+import modal from './modal';
+import role from './role';
+import status from './status';
+import table from './table';
+import ViewerTool from './ViewerTool';
+
+export default {
+  'Loading...': 'Đang tải...',
+
+  'Vingroup Big Data Institute': 'Viện Nghiên cứu Dữ liệu lớn (VinBigdata)',
+
+  ...gender,
+  ...label,
+  ...message,
+  ...modal,
+  ...status,
+  ...table,
+  ...ViewerTool,
+  ...CAD,
+  ...date,
+  ...role,
+
+  // Other
+  'Last Modified': 'Thay đổi gần nhất',
+
+  AI: 'CAD',
+  'AI Diagnose': 'Phân tích bằng CAD',
+  'AI Result': 'Xem kết quả CAD',
+  ORGANIZATION: 'QUẢN TRỊ',
+  'Organization Admin': 'Quản trị tại cơ sở',
+  REPORT: 'BÁO CÁO',
+  'Report Approve': 'Duyệt báo cáo',
+  'Report Submit': 'Lưu báo cáo',
+  'Report View': 'Xem báo cáo',
+
+  STUDY: 'DANH SÁCH CA CHỤP',
+  'Study Upload': 'Tải lên ca chụp',
+  'Study View': 'Xem danh sách ca chụp',
+  SYSDIR: 'CÂY THƯ MỤC',
+  'Sysdir View': 'Xem cây thư mục',
+  'Sysdir Admin': 'Quản trị cây thư mục',
+  WORKLIST: 'DANH SÁCH CA CHỤP',
+  'Worklist Admin': 'Xem danh sách chỉ định',
+
+  'Matching Worklist': 'Ghép chỉ định',
+
+  SUCCESS: 'Thành công',
+  'TICKET EXISTED': 'Mã phiếu đã tồn tại',
+  'TICKET NOT FOUND': 'Không tìm thấy mã phiếu',
+  'Study List': 'Danh sách ca chụp',
+  'Study_item(s)': 'ca',
+  'All Studies': 'Tất cả',
+
+  'Copied to Clipboard': 'Đã sao chép đường dẫn',
+
+  Report_Report: 'Báo cáo (ALT+R)',
+
+  'Batch AI Analysis': 'Chẩn đoán toàn bộ',
+
+  PatientID: 'Mã bệnh nhân',
+  PatientName: 'Tên bệnh nhân',
+  AccessionNumber: 'Số chỉ định',
+  'Acquisition Date': 'Ngày chụp',
+
+  "User's plan reached limit": 'Quá số lượt yêu cầu',
+  BodyPartExamined: 'Bộ phận',
+  'Body Part Examined': 'Bộ phận',
+  'Source AETitle': 'Mã máy chụp',
+  'Your search text...': 'Tìm kiếm...',
+  'Time Inserted': 'Ngày tạo',
+  'Inserted Time': 'Ngày tạo',
+  Time: 'Thời gian',
+  Filters: 'Bộ lọc',
+  'Add filter': 'Thêm bộ lọc',
+  'Patient_ID...': 'ID_Benh_Nhan...',
+  'Fake Description': '...',
+  Results: 'Kết quả bác sĩ',
+  'AI Results': 'Kết quả AI',
+  'In progress': 'Đang xử lý',
+  'AI Analyzed': 'AI chẩn đoán',
+  'No finding': 'Không thấy bất thường',
+  'No Result': 'Không có kết quả',
+  'Open Report': 'Xem báo cáo',
+  'Compare Studies': 'So sánh',
+  'Other disease': 'Có bất thường',
+  'Batch Analysis Explain':
+    'Trợ lý AI sẽ phân tích tất cả các ca chụp trong danh sách. Có thể mất nhiều thời gian.',
+
+  'Date Presets': 'Chọn nhanh',
+
+  'Unavailable CAD': 'CAD chưa hỗ trợ',
+  'CAD Suggestion': 'Gợi ý của CAD',
+  Matched: 'Đã thực hiện',
+  Unmatched: 'Chưa ghép chỉ định',
+
+  'Assign doctor': 'Phân công bác sĩ',
+  'Create Order': 'Tạo phân công',
+  'Update Order': 'Cập nhật phân công',
+  'Updated Study Information': 'Đã cập nhật thông tin ca khám',
+  'Created Order': 'Đã tạo phân công',
+  'Updated Order': 'Đã cập nhật phân công',
+  Assignment: 'Phân công',
+  'Group List': 'Danh sách nhóm',
+  'Header Viewer': 'Hiển thị',
+  Help: 'Trợ giúp',
+  'Work Group': 'Nhóm làm việc',
+  'Add Work Group': 'Thêm nhóm làm việc',
+  'item selected': 'mục được chọn',
+  'All Work Group': 'Tất cả phân công',
+  'View Work Group': 'Nhóm làm việc',
+  'Order Group': 'Nhóm phân công',
+  'Delete item confirm message': 'Vui lòng xác nhận bạn muốn xoá mục này',
+  'Delete Work Group': 'Xoá phân công',
+
+  'Assign user successfully': 'Phân công cho bác sĩ thành công',
+  "Sorry, you don't have permission to view this page.":
+    'Rất tiếc, bạn không có quyền truy cập trang này.',
+  'Add new workgroup successfully': 'Thêm mới nhóm làm việc thành công',
+  'Result of': 'Kết quả của',
+  'Study is not assigned yet': 'Chưa được phân công',
+  'Order List': 'Ca được phân công',
+
+  'AIAnalyze message':
+    'Gửi yêu cầu chẩn đoán thành công, vui lòng đợi kết quả trong giây lát',
+  'Panel Result': 'Bảng kết quả phân tích',
+
+  Model: 'Model',
+  DIAGNOSING_STUDY: 'Đang thực hiện chẩn đoán {{selectedItems}} ca chụp',
+  DIAGNOSING_STUDIES: 'Đang thực hiện chẩn đoán {{selectedItems}} ca chụp',
+  'N/A': 'AI không hỗ trợ',
+  Findings: 'Mô tả',
+  Conclusion: 'Kết luận',
+  Report: 'Xuất báo cáo',
+  'Export PDF': 'Xuất PDF',
+  'Sign of doctor': 'Bác sĩ chẩn đoán',
+  'Prediction Again': 'Chẩn đoán lại',
+  'Approve Message': 'Kết quả chẩn đoán đã được lưu lại',
+  Relabel: 'Gán lại nhãn',
+  'Need further investigations': 'Cần thăm khám thêm',
+
+  'Custom Layout': 'Bố cục tùy chọn',
+
+  FieldRequired: 'Trường thông tin không được để trống',
+
+  'Incorrect username or password': 'Sai tên đăng nhập hoặc mật khẩu',
+  'Confirm Password': 'Xác nhận mật khẩu',
+  'Remember me': 'Giữ tôi đăng nhập',
+  'Forgot password': 'Quên mật khẩu',
+  'Change Password': 'Đổi mật khẩu',
+  Logout: 'Đăng xuất',
+  'Please fill value in this field': 'Vui lòng điền giá trị vào trường này',
+  Password: 'Mật khẩu',
+  'Enter password': 'Nhập mật khẩu',
+  'Enter confirm password': 'Nhập xác nhận mật khẩu',
+  'Not strong enough': 'Không đủ mạnh',
+  'Password does not match': 'Mật khẩu không khớp',
+  Cancel: 'Hủy',
+  Save: 'Lưu',
+  'The account has been updated': 'Tài khoản đã được cập nhật',
+  'Something went wrong. Please try again or contact admin for supports.':
+    'Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ admin để được hỗ trợ.',
+
+  'Analytics Result': 'Chẩn đoán',
+  Pathological: 'Dấu hiệu / Bệnh lý',
+  Probability: 'Nguy cơ mắc',
+  'AI Analysis': 'AI Phân tích',
+
+  'Generate report': 'Xuất báo cáo',
+  'Patient number': 'Mã bệnh nhân',
+
+  'Report Number': 'Số phiếu',
+  'Number Addmitted To The Hospital': 'Số vào viện',
+  'Medical Number': 'Mã y tế',
+  'Administrative Information': 'Thông tin hành chính',
+  'Result Description': 'Mô tả kết quả',
+  'General Description': 'Mô tả chung',
+  Notes: 'Ghi nhận khác',
+  'See hurt area in next page': 'Xem vùng tổn thương ở trang kế tiếp',
+  Details: 'Chi tiết',
+  'AI Details': 'Chi tiết',
+  'The result is normal': 'Kết quả bình thường',
+  'Further remarks on the study': 'ghi chú thêm',
+  'Conclusion from system': 'Kết luận từ hệ thống',
+  'Conclusion from doctor': 'Kết luận từ bác sĩ',
+  'Add new label': 'Thêm mới nhãn',
+  'Add new': 'Thêm mới',
+  'Disease List': 'Danh sách bệnh',
+  'You are not allowed for uploading more than 5 files':
+    'Bạn không được tải lên quá 5 tệp',
+  Trial: 'Thử ngay',
+  Explore: 'Khám phá',
+  'Other note': 'Ghi chú khác',
+  RedMessage:
+    'Kết quả phân tích của phần mềm chỉ có giá trị tham khảo về mặt y khoa. Chẩn đoán cuối cùng phải được quyết định dựa trên ý kiến của bác sĩ. Người dùng chịu hoàn toàn trách nhiệm khi sử dụng phần mềm.',
+  'Export image from dicom': 'Xuất ảnh từ Dicom',
+  Copied: 'Đã sao chép.',
+  'My folder': 'Thư mục của tôi',
+  'Copy to my folder': 'Copy vào thư mục của tôi',
+  'Doctor Report': 'Bác sĩ kết luận',
+  'Autofill the report with AI analysis': 'Tự động lấy kết quả từ AI',
+  'Panel Analysis': 'Bảng phân tích',
+  'Diagnostic Results': 'Kết quả phân tích',
+  Patient: 'Bệnh nhân',
+  'Assigned date': 'Ngày chỉ định',
+  'Diagnose type': 'Loại khám',
+  'Doctor assigned': 'Bác sĩ chỉ định',
+  Service: 'Dịch vụ',
+  'Assign name': 'Tên chỉ định',
+  'Assigned finish date': 'Ngày hoàn thành chỉ định',
+  Diagnose: 'Phân tích',
+  Technical: 'Kỹ thuật chụp',
+  Loading: 'Đang tải',
+
+  'To be filled in': 'Nhập thông tin',
+  CAD: 'CAD',
+  'Save result message': 'Kết quả chẩn đoán đã được lưu lại',
+  'First approval success message':
+    'Đã hoàn thành lần duyệt thứ nhất. Có thể xem kết quả của AI để hỗ trợ cho lần duyệt thứ hai',
+  'Second approval success message':
+    'Đã hoàn thành lần duyệt thứ hai, toàn bộ các kết quả chẩn đoán đã được lưu lại',
+
+  'First approval': 'Duyệt lần 1',
+  'Second approval': 'Duyệt lần 2',
+  SaveMessage: 'Cài đặt đã được lưu lại',
+  'Reset to Defaults': '$t(Common:Reset) mặc định',
+  'User Preferences': 'Tuỳ chọn người dùng',
+  'General Settings': 'Cài đặt chung',
+  'Analysis Panel': 'Bảng phân tích',
+  Hotkeys: 'Phím tắt',
+  Preset: 'Phím tắt',
+  'Window Level': 'Trung tâm cửa sổ',
+  'Window Width': 'Độ rộng cửa sổ',
+
+  'Reject tooltip message':
+    'Bỏ qua nếu ca chụp không đủ tiêu chuẩn hoặc chưa được AI hỗ trợ',
+  'First approval tooltip message':
+    'Duyệt trước khi tham khảo phân tích của AI',
+  'Second approval tooltip message': 'Duyệt sau khi tham khảo phân tích của AI',
+  'Are you sure?': 'Bạn có chắc chắn?',
+  'Reject study in confirmation message':
+    'Vui lòng xác nhận bạn muốn loại bỏ ca chụp này',
+  'Confirm reject study': 'Xác nhận loại bỏ ca chụp',
+  'Annotate by the rectangle tool': 'Chú giải bằng công cụ "Đo chữ nhật"',
+  'Approve success message': 'Ca chụp đã được duyệt thành công',
+  'Add new disease': 'Thêm bệnh mới',
+  'Disease name': 'Tên bệnh',
+  'Unable to localize abnormalities': 'Chưa xác định được tổn thương',
+  'Show Tag List': 'Hiển thị danh sách nhãn',
+  'All Tag': 'Tất cả nhãn',
+  Groups: 'Nhóm',
+  'Suspected diseases': 'Nghi ngờ mắc các bệnh sau',
+
+  'Not Available': 'Không có sẵn',
+  Like: 'Hữu ích',
+  Dislike: 'Chưa tốt',
+  'Changes has been saved': 'Các thay đổi đã được lưu lại',
+  Note: 'Góp ý',
+  'Load More': 'Xem thêm',
+  Sorry: 'Xin lỗi',
+
+  formTitle:
+    'Please specify the dimensions, filename, and desired type for the output image.',
+  imagePreview: 'Xem trước',
+  keepAspectRatio: 'Giữ nguyên tỉ lệ',
+  loadingPreview: 'Loading Image Preview...',
+
+  'Order Report': 'Phiếu chụp',
+  'Unlock Editing': 'Mở khóa',
+  'Lock Editing': 'Khóa lại',
+  'Print Result': 'In kết quả',
+  'Conclusion Template': 'Mẫu kết luận',
+  'Revoke approval': 'Bỏ duyệt',
+  Update: 'Cập nhật',
+  IDS_CREATE_FOLDER_NAME: 'Tên thư mục',
+  IDS_CREATE_FOLDER_TAG_NAME: 'Nhãn',
+  IDS_CREATE_FOLDER_PARENT_FOLDER: 'Thư mục cha',
+  IDS_CREATE_FOLDER_DESCRIPTION: 'Mô tả',
+  IDS_CREATE_FOLDER_DISPLAY: 'Hiển thị',
+  IDS_CREATE_FOLDER_DISPLAY_SETTING:
+    'Thư mục sẽ được hiển thị cho tất cả mọi người',
+  IDS_CREATE_FOLDER_AUTO_RULE: 'Quy tắc tự động',
+  IDS_CREATE_FOLDER_AUTO_RULE_DESCRIPTION: 'Tự động lấy dữ liệu từ máy',
+  'Rule auto description':
+    'Tự động lấy dữ liệu từ máy chụp nếu ca chụp thỏa mãn điều kiện lọc.',
+  'Create new folder': 'Tạo thư mục mới',
+  'Folder name': 'Tên thư mục',
+  'Tag name': 'Tên nhãn',
+  Display: 'Hiển thị',
+  'Parent folder': 'Thư mục cha',
+  'Add condition': 'Thêm điều kiện',
+  'Separate values with commas': 'Giá trị ngăn cách nhau bằng dấy phẩy (,)',
+  'Automation Rule': 'Quy tắc tự động',
+  'Automation Rule Description':
+    'Tự động lấy dữ liệu từ máy chụp nếu ca chụp thỏa mãn điều kiện.',
+  'Public folder description':
+    'Thư mục sẽ hiển thị với tất cả người dùng được phân quyền truy cập.',
+  'Add filter condition': 'Thêm điều kiện lọc',
+  Condition: 'Điều kiện',
+  Value: 'Giá trị',
+  'Select DICOM tag': 'Lựa chọn thẻ DICOM',
+  Exactly: 'Chính xác',
+  PRIVATE: 'Cá nhân',
+  PUBLIC: 'Chung',
+  Folder: 'Thư mục',
+  StudyDescription: 'Mô tả',
+  ReferringPhysicianName: 'Tên bác sĩ giới thiệu',
+  FirstName: 'Tên',
+  LastName: 'Họ',
+  Position: 'Chức vụ',
+  PUBLIC_FOLDER: 'Thư mục chung',
+  PRIVATE_FOLDER: 'Thư mục của tôi',
+  PIN_FOLDER: 'Thư mục ghim',
+  Normal: 'Không thấy bất thường',
+  'AI not support': 'AI chưa hỗ trợ',
+
+  'Average of studies': 'Trung bình ca chụp',
+  'Study statistic via modality': 'Thống kê ca chụp theo kỹ thuật chụp',
+
+  'filter name': 'tên bộ lọc',
+  'Created By': 'Người tạo',
+  Action: 'Thao tác',
+
+  'Filter Type': 'Loại bộ lọc',
+  'filter type': 'loại bộ lọc',
+  'Filter condition details': 'Chi tiết điều kiện bộ lọc',
+  'Comma separated values': 'Giá trị cách nhau bằng dấu phẩy ( , )',
+
+  'Are you sure to delete this data': 'Bạn có chắc chắn muốn xóa dữ liệu này?',
+  'Are you sure to edit this data':
+    'Bạn có chắc chắn muốn chỉnh sửa dữ liệu này?',
+  'Are you sure to create this data':
+    'Bạn có chắc chắn muốn tạo mới dữ liệu này?',
+
+  'Conditional Filter': 'Bộ lọc có điều kiện',
+  'Unconditional Filter': 'Bộ lọc không điều kiện',
+  'Add accounts to': 'Thêm tài khoản vào',
+  'All users': 'Tất cả người dùng',
+
+  'Study not found': 'Không tìm thấy ca',
+  'The exam is currently unavailable': 'Dữ liệu ca chụp chưa sẵn sàng',
+
+  'Start date': 'Ngày bắt đầu',
+  'End date': 'Ngày kết thúc',
+  'Convert file to DICOM format': 'Chuyển đổi file sang định dạng DICOM',
+
+  'Birth Date': 'Ngày sinh',
+  'Study ID': 'ID ca chụp',
+
+  'Dicom Adapter': 'Bộ chuyển đổi DICOM',
+  'Search labels': 'Tìm nhãn',
+  'Click to load': 'Nhấn để tải',
+  'Something went wrong': 'Đã xảy ra lỗi',
+  'Something went wrong, please try again later':
+    'Đã xảy ra lỗi, vui lòng thử lại sau',
+
+  'Created study': 'Tạo ca chụp thành công',
+  'Key Image Added': 'Thêm ảnh bệnh lý thành công',
+  'Add Key Image failed': 'Không thêm được ảnh bệnh lý',
+  'Delete failed': 'Không xóa được',
+  'File not found': 'Không tìm thấy file',
+  'Cannot edit this role': 'Không thể chỉnh sửa quyền này',
+  'Can not get tenant info': 'Không thể lấy thông tin cơ sở',
+  'Match Confirmation': 'Xác nhận ghép',
+  'Scheduled and Performed study information are different. Are you sure you want to proceed anyway?':
+    'Thông tin ca đã chụp và chỉ định chụp khác nhau. Bạn có chắc chắn muốn tiếp tục không?',
+  'SCHEDULED STUDY INFO': 'THÔNG TIN CA ĐÃ CHỤP',
+  'PERFORMED STUDY INFO': 'THÔNG TIN CHỈ ĐỊNH CHỤP',
+  'Study Instance UID': 'UID ca chụp',
+
+  StudyTime: 'Thời gian ca chụp',
+  StudyInstanceUID: 'UID ca chụp',
+  StudyID: 'ID ca chụp',
+  ModalitiesInStudy: 'Các loại chụp trong ca',
+  SeriesInstanceUID: 'UID tập ảnh chụp',
+  SeriesNumber: 'Số tập ảnh chụp',
+  SOPClassUID: 'UID lớp SOP',
+  SOPInstanceUID: 'UID ca chụp SOP',
+  InstanceNumber: 'Số ca chụp',
+  PatientAge: 'Tuổi bệnh nhân',
+  PatientSex: 'Giới tính bệnh nhân',
+  Assignees: 'Người được chỉ định',
+  VindocStatus: 'Trạng thái Vindoc',
+  VindrOwner: 'Chủ sở hữu Vindr',
+  DoctorResult: 'Kết quả của bác sĩ',
+  TimeInserted: 'Thời gian được chèn',
+  IsAbnormal: 'Bất thường',
+  VindocAIResult: 'Kết quả AI của Vindoc',
+  'Confirm the password': 'Xác nhận mật khẩu',
+  'Files Attachment': 'Tệp đính kèm',
+
+  'Layout name': 'Tên bố cục',
+  'Created Date': 'Ngày tạo',
+  'Updated Date': 'Ngày cập nhật',
+  'Permissions selected': 'Quyền đã chọn',
+  'Assign Radiologist': 'Yêu cầu bác sĩ đọc ảnh',
+  'Doctor Name': 'Tên bác sĩ',
+  'Health Facilities': 'Tên cơ sở y tế',
+  Queue: 'Hàng đợi',
+
+  'Execution Device': 'Thiết bị thực hiện',
+
+  'Short Service Name': 'Tên viết tắt',
+
+  'Short Procedure Name': 'Tên viết tắt',
+
+  'Implementation Device': 'Thiết bị thực hiện',
+
+  'Add Info Service Type': 'Thêm mới loại dịch vụ',
+  'Add Info Type of Service': 'Thêm mới loại dịch vụ',
+  'Add Type Of Service': 'Thêm mới loại dịch vụ',
+
+  'Type of Service Name': 'Tên loại dịch vụ',
+  'Type of Service Code': 'Mã loại dịch vụ',
+  'Edit Info Type of Service': 'Chỉnh sửa loại dịch vụ',
+
+  Report_open: 'Báo cáo',
+
+  'Edit role successfully': 'Chỉnh sửa quyền thành công',
+  'Create role successfully': 'Tạo quyền thành công',
+  'New Password': 'Mật khẩu mới',
+  'Account info': 'Thông tin tài khoản',
+};

@@ -1,0 +1,15 @@
+export default {
+  Female: 'Nữ',
+  Male: 'Nam',
+  Other: 'Khác',
+  F: 'Nữ',
+  M: 'Nam',
+  O: 'Khác',
+  female: 'Nữ',
+  male: 'Nam',
+  other: 'Khác',
+  f: 'Nữ',
+  m: 'Nam',
+  o: 'Khác',
+  Gender: 'Giới tính',
+};

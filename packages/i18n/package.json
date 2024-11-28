@@ -1,0 +1,35 @@
+{
+  "name": "@vimed/i18n",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Vu Minh Tu",
+    "email": "tu.vm41@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "i18next": "^24.0.2",
+    "react-i18next": "^15.1.2",
+    "vite": "^5.4.11"
+  },
+  "peerDependencies": {
+    "@types/node": "^22.10.0",
+    "i18next": "^24.0.2",
+    "react-i18next": "^15.1.2",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-locize-backend": "^7.0.1",
+    "locize-lastused": "^4.0.1"
+  }
+}

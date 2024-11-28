@@ -4,8 +4,6 @@
       "baseUrl": "./",
       "jsx": "react-jsx",
       "paths": {
-          "common/*": ["../common/*"],
-          "components/*": ["./src/components/*"],
           "types/*": ["./src/types/*"]
       },
       "types": ["vite/client"]
