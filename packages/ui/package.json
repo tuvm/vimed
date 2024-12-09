@@ -17,7 +17,6 @@
   },
   "license": "ISC",
   "peerDependencies": {
-    "@vimed/i18n": "workspace:*",
     "@vitejs/plugin-react": "^4.3.3",
     "antd": "^5.22.2",
     "dayjs": "^1.11.13",

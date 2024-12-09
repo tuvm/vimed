@@ -11,11 +11,13 @@
   "scripts": {
     "viewer-web:dev": "pnpm --filter @vimed/viewer-web run serve",
     "viewer-desktop:dev": "pnpm --filter @vimed/viewer-desktop run dev",
+    "viewer-desktop:package": "pnpm --filter @vimed/viewer-desktop run build && pnpm --filter @vimed/viewer-desktop run package",
     "dev": "node ./scripts/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "pnpm exec eslint --ignore-path .gitignore . --max-warnings 0",
     "vwd": "pnpm run viewer-web:dev",
-    "vdd": "pnpm run viewer-desktop:dev"
+    "vdd": "pnpm run viewer-desktop:dev",
+    "vdp": "pnpm run viewer-desktop:package"
   },
   "keywords": [
     "DICOM",

@@ -4,7 +4,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import react from '@vitejs/plugin-react';
 import pkg from '../package.json';
 
-const PROJECT_ROOT = resolve(__dirname, '../../');
+const PROJECT_ROOT = resolve(__dirname, '../');
 
 const getVersions = async () => {
   const resp = await fetch('https://releases.electronjs.org/releases.json');
