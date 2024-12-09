@@ -1,6 +1,6 @@
 {
   "name": "vimed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DICOM viewer for cross-platform",
   "main": ".vite/index.cjs",
   "type": "module",
@@ -18,6 +18,25 @@
     "vwd": "pnpm run viewer-web:dev",
     "vdd": "pnpm run viewer-desktop:dev",
     "vdp": "pnpm run viewer-desktop:package"
+  },
+  "build": {
+    "appId": "io.github.tuvm.Vimed",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "tuvm",
+        "repo": "vimed"
+      }
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
   },
   "keywords": [
     "DICOM",

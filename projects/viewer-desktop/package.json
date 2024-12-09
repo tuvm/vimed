@@ -1,13 +1,13 @@
 {
   "name": "@vimed/viewer-desktop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "ViMed for desktop",
   "main": ".vite/index.cjs",
   "scripts": {
     "dev": "node ./scripts/dev.js",
     "build": "node ./scripts/build.js",
-    "package": "electron-builder -c electron-builder.config.cjs --publish=never",
+    "package": "electron-builder -c electron-builder.config.cjs",
     "serve": "pnpm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,25 @@
   "author": {
     "name": "Vu Minh Tu",
     "email": "tu.vm41@gmail.com"
+  },
+  "build": {
+    "appId": "io.github.tuvm.Vimed",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "tuvm",
+        "repo": "vimed"
+      }
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
   },
   "homepage": "https://vindr.ai",
   "license": "ISC",
