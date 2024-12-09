@@ -1,6 +1,6 @@
 {
   "name": "vimed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DICOM viewer for cross-platform",
   "main": ".vite/index.cjs",
   "type": "module",
