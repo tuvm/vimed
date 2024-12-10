@@ -6,7 +6,7 @@ function App() {
 });
 
   return (
-    <div><div>Hello Desktop</div><div>Version: 1.0.2</div></div>);
+    <div><div>Hello Desktop</div><div>Version: 1.0.3</div></div>);
 }
 
 export default App;
