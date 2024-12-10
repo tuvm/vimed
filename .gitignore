@@ -2,6 +2,7 @@ node_modules
 
 # build output
 .vite
+.publish
 dist
 
 # env

@@ -19,25 +19,6 @@
     "vdd": "pnpm run viewer-desktop:dev",
     "vdp": "pnpm run viewer-desktop:package"
   },
-  "build": {
-    "appId": "io.github.tuvm.Vimed",
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "tuvm",
-        "repo": "vimed"
-      }
-    ],
-    "win": {
-      "target": "nsis"
-    },
-    "mac": {
-      "target": "dmg"
-    },
-    "linux": {
-      "target": "AppImage"
-    }
-  },
   "keywords": [
     "DICOM",
     "viewer",

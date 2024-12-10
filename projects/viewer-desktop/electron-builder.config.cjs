@@ -7,6 +7,13 @@ const config = {
   productName: 'Vimed',
   copyright: 'CC-BY-NC-4.0',
   files: ['.vite/**/*', '!node_modules', 'vimed-desktop/renderer/dist/**/*'],
+  publish: [
+    {
+      provider: "github",
+      owner: "tuvm",
+      repo: "vimed"
+    }
+  ],
   mac: {
     target: [
       { target: 'dmg', arch: ['arm64', 'x64'] },
@@ -34,7 +41,7 @@ const config = {
     shortcutName: 'Vimed',
   },
   linux: {
-    target: ['deb', 'tar.xz'],
+    target: ['AppImage'],
     icon: './assets/icon.icns',
     vendor: 'Vu Minh Tu',
     category: 'Medical',
